@@ -29,24 +29,26 @@
             left: 0;
             box-sizing: border-box;
             z-index: 1000; /* Ensure it stays above other content */
+            display: flex;
+            justify-content: flex-end; /* Align to right */
         }
         .brand {
             font-size: 1.2em; /* Adjust font size as needed */
             color: #FFFFFF; /* White */
-            position: absolute;
-            top: 0; /* Align to top */
-            right: 20px;
             font-weight: 700;
             letter-spacing: 2px;
-            margin: 10px 0; /* Adjust margin to be very close to the address bar */
+            margin: 10px 20px; /* Close to address bar */
         }
         .header-content {
-            margin-top: 80px; /* Space below the fixed header */
+            margin-top: 40px; /* Reduced space between brand and header content */
+            width: 100%;
+            max-width: 800px;
         }
         .header-content h1 {
             font-size: 3em;
             font-weight: 700;
             color: #FF5C5C; /* Soft Coral */
+            margin: 0;
         }
         .header-content p {
             margin-top: 10px;
@@ -55,17 +57,14 @@
         }
         .section {
             padding: 40px;
-            max-width: 800px;
             width: 100%;
+            max-width: 800px;
             background-color: #2E2E2E; /* Slightly lighter Dark Charcoal Grey for contrast */
             border-radius: 15px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
             color: #E0E0E0; /* Light Grey */
-        }
-        .summary p {
-            margin: 0;
-            font-size: 1.2em;
-            margin-bottom: 40px; /* Space between summary and contact section */
+            margin-top: 40px; /* Space from header */
+            text-align: center;
         }
         .contact {
             margin-top: 20px;
