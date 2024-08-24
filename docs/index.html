@@ -4,127 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhythmus</title>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        /* Resetting margin and padding */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Setting up the background and text colors */
         body {
-            font-family: 'Exo 2', sans-serif;
-            background-color: #1E1E1E; /* Dark Charcoal Grey */
-            color: #E0E0E0; /* Light Grey */
-            margin: 0;
-            padding: 0;
+            background-color: #222222; /* Dark background */
+            color: #FFFFFF; /* White text */
+            font-family: 'Quicksand', sans-serif;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        header {
-            width: 100%;
-            background-color: #1E1E1E; /* Dark Charcoal Grey */
-            color: #E0E0E0; /* Light Grey */
-            padding: 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            box-sizing: border-box;
-            z-index: 1000;
-            display: flex;
-            justify-content: flex-end; /* Align to right */
             align-items: center;
-            height: 60px; /* Adjust height to ensure content fits */
-            margin: 0;
-        }
-        .brand {
-            font-size: 1em; /* Adjusted font size */
-            color: #FFFFFF; /* White */
-            font-weight: 700;
-            letter-spacing: 2px;
-            position: absolute;
-            top: 10px; /* Adjust vertical alignment */
-            right: 20px; /* Align to the right */
-        }
-        .header-content {
-            margin-top: 80px; /* Adjusted space between brand and header content */
-            width: 100%;
-            max-width: 800px;
-            display: flex;
+            height: 100vh;
             flex-direction: column;
-            align-items: center;
-            margin: 0 auto; /* Center content */
-        }
-        .header-content h1 {
-            font-size: 3em; /* Larger font size for prominence */
-            font-weight: 700;
-            color: #FF5C5C; /* Soft Coral */
-            margin: 0;
-        }
-        .header-content p {
-            margin-top: 30px; /* Reduced space between heading and paragraph */
-            font-size: 1.5em;
-            color: #E0E0E0; /* Light Grey */
-            width: 80%;
-            max-width: 600px;
-        }
-        .section {
-            padding: 40px;
-            width: 100%;
-            max-width: 800px;
-            background-color: #2E2E2E; /* Slightly lighter Dark Charcoal Grey for contrast */
-            border-radius: 15px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-            color: #E0E0E0; /* Light Grey */
-            margin-top: 40px; /* Space from header */
             text-align: center;
         }
-        .contact {
-            margin-top: 20px;
+
+        /* Styling the top right logo and text */
+        .logo-container {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            text-align: right;
         }
-        footer {
-            width: 100%;
-            padding: 20px;
-            background-color: #1E1E1E; /* Dark Charcoal Grey */
-            color: #E0E0E0; /* Light Grey */
-            text-align: center;
-            box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.3);
-            position: fixed;
-            bottom: 0;
+
+        .logo-container img {
+            width: 150px;
+            height: auto;
         }
-        footer p {
-            margin: 0;
-            font-size: 0.9em;
+
+        .logo-container h1 {
+            font-size: 2rem;
+            margin-top: 10px;
+            color: #BF9758; /* Brushed Gold */
         }
-        a {
-            color: #FF5C5C; /* Soft Coral */
+
+        /* Styling for the main content */
+        .main-content h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            color: #FFFFFF; /* White for contrast */
+        }
+
+        .main-content p {
+            font-size: 1.25rem;
+            margin: 20px 0;
+            color: #CCCCCC; /* Light grey for paragraphs */
+        }
+
+        .main-content a {
+            color: #6B8E23; /* Olive Green for links */
             text-decoration: none;
-            font-weight: 700;
-            border: none;
-            padding: 0;
-            border-radius: 0;
-            transition: color 0.3s;
+            font-weight: bold;
         }
-        a:hover {
-            color: #FF5C5C; /* Soft Coral */
-            background-color: transparent;
+
+        .main-content a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="brand">RHYTHMUS</div>
-    </header>
-    <div class="header-content">
+    <!-- Logo and title section -->
+    <div class="logo-container">
+        <img src="/path/to/your/graphic.png" alt="Rhythmus Graphic">
+        <h1>RHYTHMUS</h1>
+    </div>
+
+    <!-- Main content section -->
+    <div class="main-content">
         <h1>Welcome to Rhythmus</h1>
-        <p>Embark on a new journey where sound and experience intertwine. Here, we redefine streaming, offering a realm of possibilities just beyond the horizon. Stay tuned for what comes next.</p>
+        <p>Embark on a new journey where sound and experience intertwine.</p>
+        <p>Here, we redefine streaming, offering a realm of possibilities just beyond the horizon.</p>
+        <p><a href="mailto:contactus@rhythmus.dev">Email us at contactus@rhythmus.dev</a></p>
     </div>
-    <div class="section">
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to <a href="mailto:contactus@rhythmus.dev">email us</a>.</p>
-        </div>
-    </div>
-    <footer>
-        <p>&copy; 2024 Rhythmus. All rights reserved.</p>
-    </footer>
 </body>
 </html>
