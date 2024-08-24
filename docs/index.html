@@ -30,20 +30,19 @@
             box-sizing: border-box;
             z-index: 1000;
             display: flex;
-            justify-content: center;
+            justify-content: flex-end; /* Align to right */
             align-items: center;
             height: 60px; /* Adjust height to ensure content fits */
             margin: 0;
         }
         .brand {
-            font-size: 1.2em; /* Adjusted font size */
+            font-size: 1em; /* Adjusted font size */
             color: #FFFFFF; /* White */
             font-weight: 700;
             letter-spacing: 2px;
             position: absolute;
             top: 10px; /* Adjust vertical alignment */
-            left: 50%;
-            transform: translateX(-50%);
+            right: 20px; /* Align to the right */
         }
         .header-content {
             margin-top: 80px; /* Adjusted space between brand and header content */
@@ -52,7 +51,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 0 auto;
+            margin: 0 auto; /* Center content */
         }
         .header-content h1 {
             font-size: 3em; /* Larger font size for prominence */
@@ -61,7 +60,7 @@
             margin: 0;
         }
         .header-content p {
-            margin-top: 40px; /* Reduced space between heading and paragraph */
+            margin-top: 30px; /* Reduced space between heading and paragraph */
             font-size: 1.5em;
             color: #E0E0E0; /* Light Grey */
             width: 80%;
