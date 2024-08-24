@@ -5,78 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhythmus</title>
     <style>
-        /* Resetting margin and padding */
-        body, h1, h2, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Setting up the background and text colors */
         body {
-            background-color: #222222; /* Dark background */
-            color: #FFFFFF; /* White text */
+            margin: 0;
             font-family: 'Quicksand', sans-serif;
+            background-color: #222222; /* Dark background */
+            color: #ffffff; /* White text */
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            flex-direction: column;
             text-align: center;
         }
 
-        /* Styling the top right logo and text */
-        .logo-container {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            text-align: right;
+        h1 {
+            font-size: 3rem;
+            color: #BF9758; /* Brushed Gold for Rhythmus */
+            margin: 0;
         }
 
-        .logo-container img {
-            width: 150px;
-            height: auto;
-        }
-
-        .logo-container h1 {
+        h2 {
             font-size: 2rem;
-            margin-top: 10px;
-            color: #BF9758; /* Brushed Gold */
-        }
-
-        /* Styling for the main content */
-        .main-content h1 {
-            font-size: 2.5rem;
+            color: #ffffff; /* White for welcome text */
             margin: 20px 0;
-            color: #FFFFFF; /* White for contrast */
         }
 
-        .main-content p {
-            font-size: 1.25rem;
-            margin: 20px 0;
-            color: #CCCCCC; /* Light grey for paragraphs */
+        p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #cccccc; /* Light grey for paragraphs */
         }
 
-        .main-content a {
+        .header {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .main-content {
+            margin-top: 40px;
+        }
+
+        a {
             color: #6B8E23; /* Olive Green for links */
             text-decoration: none;
             font-weight: bold;
         }
 
-        .main-content a:hover {
+        a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <!-- Logo and title section -->
-    <div class="logo-container">
-        <img src="/path/to/your/graphic.png" alt="Rhythmus Graphic">
+    <div class="header">
         <h1>RHYTHMUS</h1>
     </div>
 
-    <!-- Main content section -->
     <div class="main-content">
-        <h1>Welcome to Rhythmus</h1>
+        <h2>Welcome to Rhythmus</h2>
         <p>Embark on a new journey where sound and experience intertwine.</p>
         <p>Here, we redefine streaming, offering a realm of possibilities just beyond the horizon.</p>
         <p><a href="mailto:contactus@rhythmus.dev">Email us at contactus@rhythmus.dev</a></p>
