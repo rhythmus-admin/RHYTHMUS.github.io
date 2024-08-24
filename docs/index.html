@@ -21,16 +21,27 @@
         }
         header {
             width: 100%;
-            background-color: #0D0D0D; /* Onyx Black */
+            background-color: #1C1C1C; /* Slightly lighter black for contrast */
             color: #F0F0F0; /* Soft White */
-            padding: 40px 0;
+            padding: 40px 20px;
             margin-bottom: 40px; /* Space between header and content */
+            text-align: center;
+            border-bottom: 2px solid #BF9758; /* Brushed Gold border for a subtle underline effect */
+        }
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
         }
         header h1 {
             margin: 0;
-            font-size: 3em;
+            font-size: 3.5em;
             font-weight: 700;
             color: #BF9758; /* Brushed Gold */
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.25em;
+            color: #F0F0F0; /* Soft White */
         }
         .section {
             padding: 40px;
@@ -80,7 +91,10 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Rhythmus</h1>
+        <div class="header-content">
+            <h1>Rhythmus</h1>
+            <p>Embark on a new journey where sound and experience intertwine.</p>
+        </div>
     </header>
     <div class="section">
         <div class="summary">
