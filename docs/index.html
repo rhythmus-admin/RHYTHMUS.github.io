@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhythmus</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             background-color: #D3D3D3; /* Light Slate Gray */
             color: #000000; /* Jet Black */
             margin: 0;
@@ -17,20 +17,20 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            text-align: center;
         }
         header {
             width: 100%;
             background-color: #000000; /* Jet Black */
             color: #FFFFFF; /* White text */
             padding: 20px 0;
-            text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h1 {
             margin: 0;
-            font-size: 3em;
-            font-weight: 700; /* Bold weight */
-            letter-spacing: 1px;
+            font-size: 3.5em;
+            font-weight: 500; /* Medium weight */
+            letter-spacing: 0.5px;
             color: #007BFF; /* Electric Blue */
         }
         .section {
@@ -38,12 +38,14 @@
             max-width: 900px;
             width: 100%;
             background-color: #FFFFFF; /* White */
-            border-radius: 10px;
+            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            margin: 20px;
         }
-        .summary {
-            margin-bottom: 20px;
+        .summary p, .contact p {
+            margin: 0;
+            font-size: 1.2em;
+            line-height: 1.6;
         }
         .contact {
             margin-top: 20px;
@@ -55,6 +57,8 @@
             color: #FFFFFF; /* White text */
             text-align: center;
             box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 0;
         }
         footer p {
             margin: 0;
@@ -63,7 +67,7 @@
         a {
             color: #007BFF; /* Electric Blue */
             text-decoration: none;
-            font-weight: 700; /* Bold weight */
+            font-weight: 500; /* Medium weight */
             border: 2px solid #007BFF; /* Electric Blue border */
             padding: 10px 20px;
             border-radius: 5px;
