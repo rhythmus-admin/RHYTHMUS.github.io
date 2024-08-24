@@ -23,25 +23,33 @@
             width: 100%;
             background-color: #1E1E1E; /* Dark Charcoal Grey */
             color: #E0E0E0; /* Light Grey */
-            padding: 40px 20px;
-            margin-bottom: 40px; /* Space between header and content */
-            text-align: center;
-            border-bottom: 2px solid #FF5C5C; /* Soft Coral */
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
         }
         .header-content {
             max-width: 800px;
             margin: 0 auto;
         }
-        header h1 {
+        .header-content h1 {
             margin: 0;
-            font-size: 3em;
+            font-size: 2em;
             font-weight: 700;
             color: #FF5C5C; /* Soft Coral */
         }
-        header p {
+        .header-content p {
             margin-top: 10px;
-            font-size: 1.2em;
+            font-size: 1.5em;
             color: #E0E0E0; /* Light Grey */
+        }
+        .brand {
+            font-size: 1.5em;
+            color: #FF5C5C; /* Soft Coral */
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
         .section {
             padding: 40px;
@@ -91,15 +99,13 @@
 </head>
 <body>
     <header>
+        <div class="brand">Rhythmus</div>
         <div class="header-content">
-            <h1>Rhythmus</h1>
-            <p>Welcome to Rhythmus.</p>
+            <h1>Welcome to Rhythmus</h1>
+            <p>Embark on a new journey where sound and experience intertwine. Here, we redefine streaming, offering a realm of possibilities just beyond the horizon. Stay tuned for what comes next.</p>
         </div>
     </header>
     <div class="section">
-        <div class="summary">
-            <p>Embark on a new journey where sound and experience intertwine. Here, we redefine streaming, offering a realm of possibilities just beyond the horizon. Stay tuned for what comes next.</p>
-        </div>
         <div class="contact">
             <h2>Contact Us</h2>
             <p>If you have any questions, feel free to <a href="mailto:contactus@rhythmus.dev">email us</a>.</p>
