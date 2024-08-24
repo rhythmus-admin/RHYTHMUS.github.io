@@ -26,14 +26,23 @@
             font-weight: 700; /* Bold weight for prominence */
             text-shadow: 1px 1px 2px #000000; /* Subtle True Black shadow for depth */
         }
-        .section {
+        .content {
             padding: 40px;
             max-width: 800px;
             margin: auto;
+        }
+        .summary {
+            background: #434343; /* Dark Gray for a subtle contrast */
             border-radius: 10px;
+            padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-            background: #6D28D9; /* Eggplant Purple */
-            color: #BF9758; /* Brushed Gold */
+            margin-bottom: 20px;
+        }
+        .contact {
+            background: #434343; /* Dark Gray for a subtle contrast */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
         }
         footer {
             margin-top: 40px;
@@ -59,25 +68,20 @@
             background-color: #6B8E23; /* Olive Green */
             color: #FFFFFF; /* White text */
         }
-        .summary {
-            margin-bottom: 30px;
-        }
-        .contact {
-            background: #6D28D9; /* Eggplant Purple */
-            color: #BF9758; /* Brushed Gold */
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Rhythmus</h1>
     </header>
-    <div class="section summary">
-        <p>Embark on a new journey where sound and experience intertwine. Here, we redefine streaming, offering a realm of possibilities just beyond the horizon. Stay tuned for what comes next.</p>
-    </div>
-    <div class="section contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to <a href="mailto:contactus@rhythmus.dev">email us</a>.</p>
+    <div class="content">
+        <div class="summary">
+            <p>Embark on a new journey where sound and experience intertwine. Here, we redefine streaming, offering a realm of possibilities just beyond the horizon. Stay tuned for what comes next.</p>
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to <a href="mailto:contactus@rhythmus.dev">email us</a>.</p>
+        </div>
     </div>
     <footer>
         <p>&copy; 2024 Rhythmus. All rights reserved.</p>
