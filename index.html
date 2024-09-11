@@ -39,6 +39,14 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border: 2px solid #4a148c; /* Deep Purple border */
         }
+        .survey-link {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff; /* White background for the survey section */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border: 2px solid #4a148c; /* Deep Purple border */
+        }
     </style>
 </head>
 <body>
@@ -47,6 +55,29 @@
         <h1>Welcome to Rhythmus</h1>
         <p>Embark on a new journey where sound and experience intertwine. Here, we redefine streaming, offering a realm of possibilities just beyond the horizon. Stay tuned for what comes next.</p>
     </div>
+
+    <!-- Survey Section -->
+    <div class="survey-link">
+        <h2>We Value Your Feedback</h2>
+        <p>We would love to hear from you. Please take a moment to complete our survey.</p>
+        <a href="survey.html">Take our Survey</a>
+    </div>
+
+    <!-- SurveyMonkey Embed Script -->
+    <script>
+        (function(t,e,s,n){
+            var o,a,c;
+            t.SMCX=t.SMCX||[],e.getElementById(n)||
+            (o=e.getElementsByTagName(s),
+            a=o[o.length-1],
+            c=e.createElement(s),
+            c.type="text/javascript",
+            c.async=!0,
+            c.id=n,
+            c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdxWC3lffFr9zirQLJs8QkgppUs4SyJP2Mq82Td7gZD2U.js",
+            a.parentNode.insertBefore(c,a))
+        })(window,document,"script","smcx-sdk");
+    </script>
 
 </body>
 </html>
